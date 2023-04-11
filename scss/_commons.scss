@@ -1,0 +1,45 @@
+*{
+	font-family: $mainFont;
+	color: map-get($colores,grisOscuro);
+	box-sizing: border-box;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: map-get($colores,grisOscuro);
+}
+
+.container-fluid{
+	padding: 0!important;
+}
+
+body{
+	background-color: map-get($colores,blanco);
+	
+	main{
+		overflow-x: hidden; //no lo pongo en el * porque para usar position sticky en el menuNoHome, ningún ancestro de tu elemento sticky puede tener overflow:hidden
+	}
+}
+
+//logo Vertice
+img[src$="images/logos/logoVerticeConTexto.svg"]{
+	height: 120px;
+}
+
+//https://cybmeta.com/como-hacer-un-iframe-responsive
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%; //Por ejemplo, para un aspect ratio 3:2 sería (2/3)*100 = 66.66%. Ratio 4:3 -> 75%. Ratio 16:9 -> 56,25%
+	height: 0;
+	overflow: hidden;
+}
+.embed-container iframe {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+

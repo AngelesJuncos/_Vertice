@@ -1,0 +1,216 @@
+//botón hamburguesa ->colores
+nav{
+    //button{
+        //botón hamburguesa -> fondo azul90 
+        //background-color: map-get($colores, azul90);
+    //}
+    li{
+        a{
+            font-weight: $weight500;
+            @media (min-width: 768px) {
+                background-color: map-get($colores, transparente);
+            }
+        }
+    }
+    
+    //botón hamburguesa -> borde transparente
+    .navbar-toggler {
+        border: map-get($colores, transparente) 2px solid;
+    }
+    
+    //botón hamburguesa -> 3 rayitas gris
+    .navbar .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28146, 152, 153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
+
+//navbar home
+#navbarVertice{
+    margin: 0;
+    padding: 0 1rem;
+    ul{
+        li{
+            a{
+                color: map-get($colores, blanco);
+                background-color: map-get($colores, azul90);
+                @media (min-width: 768px) {
+                    color: map-get($colores,grisOscuro);
+                    background-color: map-get($colores, transparente);
+                    border: map-get($colores, grisOscuro) 1.5px solid;
+                    margin: 5px 0;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    &:hover{
+                        color: map-get($colores,blanco);
+                        border: map-get($colores, gris) 1.5px solid;
+                        background-color: map-get($colores,gris);
+
+                    }
+                }
+
+            }
+        }
+    }
+    
+    
+    @media (min-width: 768px) {
+        overflow-y: hidden;
+        background-color: map-get($colores, transparente);
+        
+    }  
+    
+    //logo Vertice
+    div{
+        a{
+            img{
+                @media (min-width: 768px) {
+                    display: none;
+                }  
+            }
+        }
+    }
+    
+    
+}
+
+//logos redes #home
+#home2 {
+    .logosMobile{
+        a {
+            svg{
+                fill: map-get($colores, grisOscuro);
+            }
+        }
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    .logosDesktop{
+        display: none;
+        @media (min-width: 768px) {
+            display: block;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            a {
+                padding: 0 0.15rem;
+            }
+            svg{
+                fill: map-get($colores, azul);
+                &:hover{
+                    fill: map-get($colores, gris);
+                }
+            }
+        }
+    }
+    
+}
+
+//navbar #contenido
+#contenido{
+    .menuNoHome{
+        margin: 0;
+        padding: 0 1rem;
+        z-index: 1000;
+        background-color: map-get($colores, azul20);
+        ul{
+            li{
+                a{
+                    font-weight: $weight700;
+                    @media (min-width: 768px) {
+                        //Subrayado animado
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 0% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 1.8px;
+                        transition: background-size .5s;
+                        //hover
+                        &:hover{
+                            //Subrayado animado
+                            background-size: 100% 1.8px;
+                        }
+                        padding: 0!important;
+                }
+                }   
+            }
+        }
+        
+        @media (min-width: 768px) {
+            display: block;
+            position: sticky;
+            top: 0;
+        }
+        .w-lg-100{
+            text-align: right; //para alinear el botón hamburguesa a la derecha
+            @media (min-width: 992px) {
+                width: 100%; //para que funcione el justify content
+            }
+        }
+        //logos redes #contenido
+        .logosMobile{
+            a {        
+                //padding: 0 0.15rem;
+                svg{
+                    fill: map-get($colores, azul);
+                }
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+        .logosDesktop2{
+            display: none;
+            @media (min-width: 992px) {
+                display: block;
+                a{
+                    svg{
+                        fill: map-get($colores, azul);
+                        &:hover{
+                            fill: map-get($colores, grisOscuro); 
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+//footer
+.footerBackground{
+    background-color: map-get($colores, azul10);
+}
+
+footer{
+    ul{
+        li{
+            list-style:none;
+            svg{
+                fill: map-get($colores, azul);
+                margin-right: 16px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        form {
+            width: 50vw;
+        }
+        ul, iframe {
+            padding: 0 2rem;
+        }
+
+    }
+
+    iframe{
+        padding-bottom: 1.5rem!important;
+    }
+
+    .copyright{
+        background-color: map-get($colores, azul10);
+        border-top: map-get($colores, azul) 1.5px solid;
+        p{
+            margin: 0!important;
+        }
+    }
+}

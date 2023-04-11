@@ -1,0 +1,178 @@
+.espacioVacio{
+    height: 120px; //porque la nav tiene position relative y para que cuando hago click en la nav para ir a una sección de la pág, que no se superponga la sección con la nav
+}
+
+#contenido{
+    #nosotros{
+        ul{
+            li{
+                list-style:none;
+                font-size: 1.5rem;
+                svg{
+                    fill: map-get($colores, azul);
+                    margin-right: 16px;
+                }
+            }
+        }
+
+        
+            @media (min-width: 992px) {
+                .card{
+                    width: 50vw!important;
+                }
+                
+            }
+
+        
+        
+        .btn-primary {
+            color: map-get($colores, blanco);
+            background-color: map-get($colores, azul90);
+            border: map-get($colores, azul) 1px solid;
+            &:hover{
+                color: map-get($colores, azul);
+                background-color: map-get($colores, blanco);
+                border: map-get($colores, grisOscuro) 1px solid;
+            }
+        }
+        
+        .bannerConQuienesTrabajamos{
+            background-color: map-get($colores, grisOscuro20);
+            img{
+                width: 120px;
+                //max-width: 120px;
+                object-fit: scale-down;
+            }
+        }
+    }
+
+    #steelFrame{
+        .bannerBeneficios{
+            background-color: map-get($colores, grisOscuro20);
+            div{
+                width: 240px;
+                max-width: 240px;
+                svg{
+                    width: 60px;
+                    height: 60px;
+                    fill: map-get($colores, azul);
+                }
+            }
+        }
+    }
+
+    #obras{
+        @media (min-width: 992px) {
+            .media{
+                width: 90%;
+            }
+            div[class="w-75 mx-auto my-4"]{
+                width: 10%;
+                padding: 0 2rem;
+            }
+        }
+           
+        img, video{
+            max-height: 75vh;
+            object-fit: scale-down;
+        }
+    }
+
+    #servicios{
+        .gridServicios{
+            width: 100%;
+            @media (min-width: 768px) {
+                width: 75%;
+            }
+            
+            div.row{
+                article{
+                    padding: 0!important;
+                    margin: 0!important;
+                    position: relative;
+                    a{
+                        img{
+                            filter: opacity(0.5) drop-shadow(0 0 0 map-get($colores, grisOscuro)); //para que quede uniforme el filtro, todas las img tienen que estar ya con mucho brillo (bien "blancas")
+                            width: 400px;
+                            object-fit: cover;
+                            &:hover{
+                                transform: scale(1.01);                
+                            }
+                            @media (min-width: 992px) {
+                                width: 100%;   
+                            }
+                        }
+                            
+                    }
+                    .textoEncimaCentrado {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        h2, p, small {
+                            color: map-get($colores, blanco);
+                            //text-shadow: 0 0 10px map-get($colores, grisOscuro);
+                            text-align: left;
+                        }
+                        h2{
+                            font-weight: 700;
+                        }
+                    }
+                    .card{
+                        //width: 100%;
+                        width: 540px!important; //32rem
+                        max-width: 100vw;
+                        @media (min-width: 768px) {
+                            max-width: 700px!important; //32rem
+                        }
+                        .card-img-top{
+                            //filter: opacity(0.8) drop-shadow(0 0 0 map-get($colores,grisOscuro));
+                            overflow-y: hidden;
+                            background-color: map-get($colores, grisOscuro20);
+                        }
+                    }
+                }
+            }           
+
+        }
+        
+    }
+}
+
+#contacto{  
+    h4{
+        color: map-get($colores, azul);
+        font-weight: $weight400;
+    }
+
+    h5{
+        color: map-get($colores, azul);
+        font-weight: $weight400;
+        margin-top: 0.5rem;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    textarea, input:not(input:last-child) {
+        text-align: left;
+        background-color: map-get($colores, transparente);
+        border-bottom: solid 1px map-get($colores, grisOscuro);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-left: 2rem;
+    }
+    
+    .button{
+        color: map-get($colores, blanco);
+        background-color: map-get($colores, azul90);
+        border: map-get($colores, azul) 1px solid;
+    }
+
+    input.button:hover {
+        color: map-get($colores, azul);
+        background-color: map-get($colores, blanco);
+        border: map-get($colores, grisOscuro) 1px solid;
+    }
+    
+}

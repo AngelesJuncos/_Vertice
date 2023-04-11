@@ -1,0 +1,62 @@
+#home {
+    background-image: url(../images/index/portada.webp);
+    background-color: map-get($colores,grisOscuro80);
+    @media (min-width: 768px) {
+		background-color: map-get($colores,transparente);
+    }
+    .filtro{
+        background-color: map-get($colores,grisOscuro80); 
+    }
+    height: 100vh;
+    background-size: cover;
+    background-blend-mode: darken;
+    @media (min-width: 768px) {
+		min-height: 100vh;
+        display: flex;
+        padding: 0;
+    }
+
+    //logo de vertice grande al inicio
+    img[src="images/logos/logoVerticeSinTexto.svg"] {
+        
+        display: none;
+        @media (min-width: 768px) {
+            height: 100vh;
+            display: block;
+            position: absolute;
+            transform: translateX(-50%) !important;
+            left: 50% !important; 
+        }
+    }
+    
+    #home2{
+        @media (min-width: 768px) {
+		    background-color: map-get($colores, blanco); //color de fondo para el menú
+	    }
+        .frase{
+            height: 50vh; //para que funcione el justify-content-end que puse en el index en versión mobile
+            @media (min-width: 768px) {
+                width: 40vw;
+                height: 100vh;
+                position: absolute;
+                bottom: 10%;
+                left: 10%; 
+            }
+        }
+        h1, h2{
+            font: $secondFont;
+            color: map-get($colores, blanco);
+            //text-shadow: 0 0 10px map-get($colores, azul);
+            font: $secondFont;
+            @media (min-width: 768px) {
+                //color: map-get($colores, grisOscuro);
+                text-shadow: none;
+                background-color: map-get($colores, azul);
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+
+    
+}
