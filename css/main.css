@@ -78,14 +78,17 @@ nav .navbar .navbar-toggler-icon {
   #home2 .logosMobile {
     display: none; } }
 
+#home2 .logoVerticeDesktop {
+  display: none; }
+  @media (min-width: 768px) {
+    #home2 .logoVerticeDesktop {
+      display: block; } }
+
 #home2 .logosDesktop {
   display: none; }
   @media (min-width: 768px) {
     #home2 .logosDesktop {
-      display: block;
-      position: absolute;
-      top: 10%;
-      right: 10%; }
+      display: block; }
       #home2 .logosDesktop a {
         padding: 0 0.15rem; }
       #home2 .logosDesktop svg {
@@ -93,46 +96,60 @@ nav .navbar .navbar-toggler-icon {
         #home2 .logosDesktop svg:hover {
           fill: #929899; } }
 
-#contenido .menuNoHome {
+@media (min-width: 768px) {
+  #home2 div#home2 .logoVerticeDesktop {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%); } }
+
+@media (min-width: 768px) {
+  #home2 div#home2 .logosDesktop {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%); } }
+
+.menuNoHome {
   margin: 0;
   padding: 0 1rem;
   z-index: 1000;
   background-color: rgba(13, 113, 143, 0.2); }
-  #contenido .menuNoHome ul li a {
+  .menuNoHome ul li a {
     font-weight: 700; }
     @media (min-width: 768px) {
-      #contenido .menuNoHome ul li a {
+      .menuNoHome ul li a {
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 1.8px;
         transition: background-size .5s;
         padding: 0 !important; }
-        #contenido .menuNoHome ul li a:hover {
+        .menuNoHome ul li a:hover {
           background-size: 100% 1.8px; } }
   @media (min-width: 768px) {
-    #contenido .menuNoHome {
+    .menuNoHome {
       display: block;
       position: sticky;
       top: 0; } }
-  #contenido .menuNoHome .w-lg-100 {
+  .menuNoHome .w-lg-100 {
     text-align: right; }
     @media (min-width: 992px) {
-      #contenido .menuNoHome .w-lg-100 {
+      .menuNoHome .w-lg-100 {
         width: 100%; } }
-  #contenido .menuNoHome .logosMobile a svg {
+  .menuNoHome .logosMobile a svg {
     fill: #0d718f; }
   @media (min-width: 992px) {
-    #contenido .menuNoHome .logosMobile {
+    .menuNoHome .logosMobile {
       display: none; } }
-  #contenido .menuNoHome .logosDesktop2 {
+  .menuNoHome .logosDesktop2 {
     display: none; }
     @media (min-width: 992px) {
-      #contenido .menuNoHome .logosDesktop2 {
+      .menuNoHome .logosDesktop2 {
         display: block; }
-        #contenido .menuNoHome .logosDesktop2 a svg {
+        .menuNoHome .logosDesktop2 a svg {
           fill: #0d718f; }
-          #contenido .menuNoHome .logosDesktop2 a svg:hover {
+          .menuNoHome .logosDesktop2 a svg:hover {
             fill: #4d4d4d; } }
 
 .footerBackground {
@@ -158,6 +175,10 @@ footer .copyright {
   border-top: #0d718f 1.5px solid; }
   footer .copyright p {
     margin: 0 !important; }
+
+@media (min-width: 768px) {
+  .displayMobile {
+    display: none; } }
 
 #home {
   background-image: url(../images/index/portada.webp);
@@ -206,8 +227,9 @@ footer .copyright {
         background-color: #0d718f;
         font-size: 1.2rem; } }
 
-.espacioVacio {
-  height: 120px; }
+@media (min-width: 768px) {
+  .espacioVacio {
+    height: 120px; } }
 
 #contenido #nosotros ul li {
   list-style: none;

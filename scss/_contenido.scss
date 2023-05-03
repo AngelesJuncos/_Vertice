@@ -1,5 +1,7 @@
 .espacioVacio{
-    height: 120px; //porque la nav tiene position relative y para que cuando hago click en la nav para ir a una sección de la pág, que no se superponga la sección con la nav
+    @media (min-width: 768px) {
+        height: 120px; //porque la nav tiene position relative y para que cuando hago click en la nav para ir a una sección de la pág, que no se superponga la sección con la nav
+    }
 }
 
 #contenido{

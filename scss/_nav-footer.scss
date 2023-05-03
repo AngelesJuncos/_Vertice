@@ -85,13 +85,16 @@ nav{
             display: none;
         }
     }
+    .logoVerticeDesktop{
+        display: none;
+        @media (min-width: 768px) {            
+            display: block;
+        }
+    }
     .logosDesktop{
         display: none;
         @media (min-width: 768px) {
             display: block;
-            position: absolute;
-            top: 10%;
-            right: 10%;
             a {
                 padding: 0 0.15rem;
             }
@@ -103,74 +106,91 @@ nav{
             }
         }
     }
-    
-}
-
-//navbar #contenido
-#contenido{
-    .menuNoHome{
-        margin: 0;
-        padding: 0 1rem;
-        z-index: 1000;
-        background-color: map-get($colores, azul20);
-        ul{
-            li{
-                a{
-                    font-weight: $weight700;
-                    @media (min-width: 768px) {
-                        //Subrayado animado
-                        background-image: linear-gradient(currentColor, currentColor);
-                        background-position: 0% 100%;
-                        background-repeat: no-repeat;
-                        background-size: 0% 1.8px;
-                        transition: background-size .5s;
-                        //hover
-                        &:hover{
-                            //Subrayado animado
-                            background-size: 100% 1.8px;
-                        }
-                        padding: 0!important;
-                }
-                }   
+    div#home2{
+        .logoVerticeDesktop{
+            @media (min-width: 768px) {
+                position: absolute;
+                top: 50%; //7%
+                right: 50%; //8%
+                transform: translate(-50%, -50%);
             }
         }
         
-        @media (min-width: 768px) {
-            display: block;
-            position: sticky;
-            top: 0;
-        }
-        .w-lg-100{
-            text-align: right; //para alinear el botón hamburguesa a la derecha
-            @media (min-width: 992px) {
-                width: 100%; //para que funcione el justify content
+        .logosDesktop{
+            @media (min-width: 768px) {
+                position: absolute;
+                bottom: 50%;//10%
+                right: 50%;//8.5%
+                transform: translate(-50%, -50%);
             }
         }
-        //logos redes #contenido
-        .logosMobile{
-            a {        
-                //padding: 0 0.15rem;
+    
+    }  
+}
+
+//navbar contenido.html
+.menuNoHome{
+    margin: 0;
+    padding: 0 1rem;
+    z-index: 1000;
+    background-color: map-get($colores, azul20);
+    ul{
+        li{
+            a{
+                font-weight: $weight700;
+                @media (min-width: 768px) {
+                    //Subrayado animado
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 1.8px;
+                    transition: background-size .5s;
+                    //hover
+                    &:hover{
+                        //Subrayado animado
+                        background-size: 100% 1.8px;
+                    }
+                    padding: 0!important;
+            }
+            }   
+        }
+    }
+    
+    @media (min-width: 768px) {
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+    .w-lg-100{
+        text-align: right; //para alinear el botón hamburguesa a la derecha
+        @media (min-width: 992px) {
+            width: 100%; //para que funcione el justify content
+        }
+    }
+    //logos redes #contenido
+    .logosMobile{
+        a {        
+            //padding: 0 0.15rem;
+            svg{
+                fill: map-get($colores, azul);
+            }
+        }
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    .logosDesktop2{
+        display: none;
+        @media (min-width: 992px) {
+            display: block;
+            a{
                 svg{
                     fill: map-get($colores, azul);
-                }
-            }
-            @media (min-width: 992px) {
-                display: none;
-            }
-        }
-        .logosDesktop2{
-            display: none;
-            @media (min-width: 992px) {
-                display: block;
-                a{
-                    svg{
-                        fill: map-get($colores, azul);
-                        &:hover{
-                            fill: map-get($colores, grisOscuro); 
-                        }
+                    &:hover{
+                        fill: map-get($colores, grisOscuro); 
                     }
-    
                 }
+
             }
         }
     }
