@@ -21,13 +21,11 @@
         display: flex;
         padding: 0;
     }
-
     //logo de vertice grande al inicio
-    img[src="images/logos/logoVerticeSinTexto.svg"] {
-        
+    .logoGrandeVertice {
         display: none;
         @media (min-width: 768px) {
-            height: 100vh;
+            height: 85vh;
             display: block;
             position: absolute;
             transform: translateX(-50%) !important;
@@ -41,6 +39,16 @@
 	    }
         .frase{
             height: 50vh; //para que funcione el justify-content-end que puse en el index en versión mobile
+            .vertice{
+                font-family: $secondFont;
+                color: map-get($colores, blanco);
+                font-size: 3rem;
+                margin: 0;
+            }
+            .construcciones{
+                color: map-get($colores, blanco);
+                font-size: 1.5rem;
+            }
             @media (min-width: 768px) {
                 width: 40vw;
                 height: 100vh;
@@ -50,10 +58,9 @@
             }
         }
         h1, h2{
-            font: $secondFont;
             color: map-get($colores, blanco);
             //text-shadow: 0 0 10px map-get($colores, azul);
-            font: $secondFont;
+            font-size: 1.2rem;
             @media (min-width: 768px) {
                 //color: map-get($colores, grisOscuro);
                 text-shadow: none;

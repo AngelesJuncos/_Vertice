@@ -20,7 +20,7 @@
     <!--home-->
     <div id="home" class="container-fluid"> <!--poner position relative si el logo grande de vertice no se desplaza-->
         <!--logo de vertice grande al inicio-->
-        <img fetchpriority="high" src="images/logos/logoVerticeSinTexto.svg" alt="">
+        <img class="logoGrandeVertice" fetchpriority="high" src="images/logos/logoVerticeConTextoBlanco.png" alt="">
 
         <!--1era parte del home-->
         <div class="col-md-9 filtro"></div>
@@ -28,16 +28,41 @@
         <!--2da parte del home-->
         <div id="home2" class="col-md-3  d-md-flex flex-md-column align-items-md-center justify-content-md-around">
 
-            <!--logo vértice, se ve en versión desktop-->
+            <!--logo vértice, se ve en versión desktop
             <div class="logoVerticeDesktop">
                 <a href="#home"><img fetchpriority="high" src="images/logos/logoVerticeConTexto.svg" alt=""></a>
-            </div>
+            </div>-->
+
+            <!--logos redes, se ven en versión desktop-->
+            <div class="logosDesktop"><!--facebook, youtube??-->
+              <a href="https://wa.me/593513446854" target="_blank">
+                  <svg alt="logo de whatsapp con vínculo al whatsapp de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+              </a>
+              <a href="https://www.instagram.com/verticeconstruccionesok/" target="_blank">
+                  <svg alt="logo de instagram con vínculo al facebook de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+              </a>
+              <a href="https://goo.gl/maps/n8LipZTEFMwFxijbA" target="_blank">
+                  <svg alt="logo de ubicación de las oficinas de Vertice Construcciones con vínculo a google maps" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+              </a>
+              <a href="mailto:presupuestos@verticeconstrucciones.com.ar" target="_blank">
+                  <svg alt="logo de mensajería con vínculo al correo electrónico de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+              </a>
+          </div>
 
             <!--starts navbar home-->
             <nav id="navbarVertice" class="navbar navbar-expand-md">
                 <div class="container-fluid d-flex">
                     <!--logo Vertice-->
-                    <a href="#home"><img fetchpriority="high" src="images/logos/logoVerticeConTexto.svg" alt=""></a>
+                    <a href="#home"><img fetchpriority="high" src="images/logos/logoVerticeSinTexto.svg" alt=""></a>
 
                     <!--logos redes, sólo se ven en versión mobile-->
                     <div class="logosMobile my-auto"><!--facebook, youtube??-->
@@ -83,7 +108,7 @@
                             <a class="nav-link" href="pages/contenido.html#servicios">Servicios</a>
                             </li> 
                             <li class="nav-item">
-                            <a class="nav-link" href="pages/contenido.html#contacto">Contactanos</a>
+                            <a class="nav-link mb-md-5" href="pages/contenido.html#contacto">Contactanos</a>
                             </li>                              
                         </ul>
                     </div>    
@@ -94,43 +119,28 @@
 
             </nav><!--ends navbar--> 
 
-            <!--logos redes, se ven en versión desktop-->
-            <div class="logosDesktop"><!--facebook, youtube??-->
-                <a href="https://wa.me/593513446854" target="_blank">
-                    <svg alt="logo de whatsapp con vínculo al whatsapp de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                    </svg>
-                </a>
-                <a href="https://www.instagram.com/verticeconstruccionesok/" target="_blank">
-                    <svg alt="logo de instagram con vínculo al facebook de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                    </svg>
-                </a>
-                <a href="https://goo.gl/maps/n8LipZTEFMwFxijbA" target="_blank">
-                    <svg alt="logo de ubicación de las oficinas de Vertice Construcciones con vínculo a google maps" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                </a>
-                <a href="mailto:presupuestos@verticeconstrucciones.com.ar" target="_blank">
-                    <svg alt="logo de mensajería con vínculo al correo electrónico de Vertice Construcciones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                    </svg>
-                </a>
-            </div>
+            
                        
 
             <!--frase marketinera -->
-            <main class="frase d-flex flex-column justify-content-end frase">
-                <h1>Somos expertos en steel framing</h1>
-                <h2>Construimos rápido y a menor costo</h2>
-                <h2>Vértice Construcciones, unimos</h2>
+            <main class="frase d-flex flex-column justify-content-end">
+              <div class="displayMobile">
+                <p class="vertice">VÉRTICE</p>
+                <p class="construcciones">CONSTRUCCIONES</p>
+              </div>
+              <h1>Somos expertos en steel framing</h1>
+              <h2>Construimos rápido y a menor costo</h2>
+              <h2>Vértice Construcciones, unimos</h2>
             </main>
             
         </div>
               
           
     </div>
+
+    
+    
+      
 
     <!--contenido (se ve en mobile únicamente)-->
     <main  id="contenido" class="displayMobile">
@@ -215,14 +225,15 @@
             
             <h3 class="my-4">¿Con quiénes trabajamos?</h3>
             <div class="bannerConQuienesTrabajamos py-2 mx-auto d-flex flex-row flex-wrap justify-content-around">
-                <img class="p-4" src="https://mdvconstructora.com.ar/images/logos/logoMDV-conTituloAzul.svg" alt="logo de MDV Constructora">
-                <img class="p-4" data-src="https://steelplex.com.ar/wp-content/uploads/2021/05/LOGO-STEELPLEX.svg" src="https://steelplex.com.ar/wp-content/uploads/2021/05/LOGO-STEELPLEX.svg" alt="logo steelplex">
-                <img class="p-4" src="https://ksaenseco.com/activos/logo-ksa.png" alt="Ksa en seco">
-                <img class="p-4" src="https://experto.com.ar/wp-content/uploads/2021/01/Logo-2021-Blanco.png" alt="Experto Construcción Inteligente">
-                <img class="p-4" src="https://edifiseco.com.ar/wp-content/uploads/2021/08/cropped-CLIENTES_Mesa-de-trabajo-1-copia-21-300x300-2.png" alt="logo edifiseco">
-                <img class="p-4" src="images/logos/logoSet.png" alt="logo set">
-                <!--<img class="p-4" src="https://static.wixstatic.com/media/c3510b_0c177bde7bf74069a02a787044036b3e~mv2.png/v1/fill/w_434,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ESTUDIO121_Logo3.png" alt="logo estudio 121">-->
-            </div>
+                <img class="p-2" src="images/logos/logosAliados/logoMDV.svg" alt="logo MDV Constructora">
+                <img class="p-2" src="images/logos/logosAliados/logoSteelplex.svg" alt="logo steelplex">
+                <img class="p-2" src="images/logos/logosAliados/logoKsa.png" alt="logo Ksa en seco">
+                <img class="p-2" src="images/logos/logosAliados/logoExperto.png" alt="logo Experto Construcción Inteligente">
+                <img class="p-2" src="images/logos/logosAliados/logoEdifiseco.png" alt="logo edifiseco">
+                <img class="p-2" src="images/logos/logosAliados/logoEstudio121.png" alt="logo Estudio 121">
+                <img class="p-2" src="images/logos/logosAliados/logoNicolasJuarez.jpeg" alt="logo Nicolas Juarez">
+                <img class="p-2" src="images/logos/logosAliados/logoSet.png" alt="logo set">
+              </div>
 
         </div><!--ends #nosotros-->
     
@@ -231,11 +242,11 @@
             <h2 class="my-4">Steel Framing</h2>
             <div class="d-md-flex flex-md-row-reverse">
                 <div class="w-75 mx-auto mx-md-4 my-4">
-                    <p class="text-start">El <strong>Steel Framing</strong> es un sistema de construcción que cada día se está implementando más. Su principal ventaja es la rapidez en la construcción. Si bien guarda algunas similitudes con la construcción en seco, es un método que se diferencia de él en varios aspectos claves.</p>
-                    <p class="text-start">Pero, ¿qué es el Steel Framing, también conocido como <strong>Steel Frame</strong>?</p>
-                    <p class="text-start">Es un sistema de construcción que emplea como elementos estructurales perfiles de acero ("steel frame" en inglés) realizados en frío y galvanizados, para formar columnas verticales y vigas horizontales, en vez de vigas de madera o aluminio.</p>
-                    <p class="text-start">Cada perfil incluye perforaciones en su interior, para permitir el paso de tuberías, cables y elementos estructurales. Estos perfiles se unen entre sí para formar celdas, generalmente rectangulares, sobre las cuales se colocan las distintas planchas que formarán las paredes, el piso o el techo, que están unidos al marco. Sobre estos perfiles se colocan las planchas de aislación y terminado, que pueden ser de fibrocemento, fibra de vidrio y polímero, entre otros, para los elementos aislantes, y placas de yeso, polímeros o cerámicos para las terminaciones interiores o exteriores.</p>
-                    <p class="text-start"><small>Fuente: https://www.demaquinasyherramientas.com/maquinas/que-es-el-steel-framing</small></p>
+                    <p class="text-start">El <strong>Steel Framing</strong> o <strong>Steel Frame</strong> es un sistema de construcción que cada día se está implementando más. Su principal ventaja es la rapidez en la construcción. Si bien guarda algunas similitudes con la construcción en seco, es un método que se diferencia de él en varios aspectos claves.</p>
+                    <p class="text-start">Pero, ¿qué es el Steel Framing entonces?</p>
+                    <p class="text-start">Es un sistema de construcción que emplea como elementos estructurales perfiles de acero realizados en frío y galvanizados, para formar columnas verticales y vigas horizontales, en vez de vigas de madera o aluminio.</p>
+                    <p class="text-start">Cada perfil cuenta con perforaciones en su interior, para permitir el paso de todos los servicios necesarios (agua, luz y gas). Estos perfiles se unen entre sí para formar paneles, los cuales luego irán revestidos por distintas placas (OSB, superboard, placa de yeso, entre otras) para las terminaciones interiores o exteriores, albergando dentro de las mismas la aislación, la cual podrá ser celulosa proyectada, lana de vidrio, poliuretano u otra.</p>
+                    <!--Fuente: https://www.demaquinasyherramientas.com/maquinas/que-es-el-steel-framing-->
                 </div>
                 <img class="my-auto mx-2" width="420" height="420" src="images/pages/contenido/steelFrame/steelFrame.webp" alt="">
             </div>
@@ -272,7 +283,7 @@
                         <path d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z"/>
                         <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z"/>
                     </svg>
-                    <h4 class="mt-2">10%</h4>
+                    <h4 class="mt-2">$$</h4>
                     <p>MENOR COSTO POR M<sup>2</sup></p>
                     <small>Construcción más eficiente</small>
                 </div>
@@ -390,7 +401,6 @@
                     <p class="text-start">Tanto el revestimiento interior como exterior de la casa está realizado con el sistema EIF´s y un acabado símil hormigón visto. El piso es de hormigón alisado color gris plomo. Y las aberturas de madera.</p>
                     <p class="text-start"><small>
                       <ul class="text-start">
-                        <li class="text-start">Proyecto: Arq. Joaquín Estévez</li>
                         <li class="text-start">Empresa constructora: <strong>Vértice Construcciones</strong></li>
                         <li class="text-start">Superficie construida: 70 m<sup>2</sup> cubiertos</li>
                         <li class="text-start">Plazo de ejecución: 3 meses</li>
@@ -523,7 +533,7 @@
                     <h3>Casa en 7 Soles</h3>
                     <p class="text-start">La vivienda localizada en el barrio Siete Soles, a 12km de la ciudad de Córdoba,  fue construida íntegramente con el sistema Steel Framing.</p>
                     <p class="text-start">Los materiales utilizados como aislación para esta vivienda fueron poliuretano proyectado en los techos y celulosa proyectada en las paredes interiores y exteriores.</p>
-                    <p class="text-start">Para el revestimiento exterior se eligió el sistema EIF´s con acabados en microcemento, superando así el nivel de aislación lograda en comparación a la construcción tradicional, esto es, un 60% en materia de sonido y un 115% a nivel térmico.</p>
+                    <p class="text-start">El revestimiento interior se realizó con acabados en microcemento. Para el revestimiento exterior se eligió el sistema EIF´s, superando así el nivel de aislación lograda en comparación a la construcción tradicional, esto es, un 60% en materia de sonido y un 115% a nivel térmico.</p>
                     <p class="text-start"><small>
                       <ul class="text-start">
                         <li class="text-start">Proyecto: Arq. Nicolás Juarez</li>
@@ -643,9 +653,6 @@
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="images/pages/contenido/obras/obra1/IMG_9v.webp" class="d-block w-100" alt="">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="5000">
-                        <img src="images/pages/contenido/obras/obra1/IMG_10v.webp" class="d-block w-100" alt="">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="images/pages/contenido/obras/obra1/IMG_11h.webp" class="d-block w-100" alt="">

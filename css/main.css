@@ -48,6 +48,8 @@ nav .navbar .navbar-toggler-icon {
 #navbarVertice {
   margin: 0;
   padding: 0 1rem; }
+  #navbarVertice img[src$="images/logos/logoVerticeSinTexto.svg"] {
+    height: 120px; }
   #navbarVertice ul li a {
     color: white;
     background-color: rgba(13, 113, 143, 0.9); }
@@ -72,7 +74,7 @@ nav .navbar .navbar-toggler-icon {
       display: none; } }
 
 #home2 .logosMobile a svg {
-  fill: #4d4d4d; }
+  fill: white; }
 
 @media (min-width: 768px) {
   #home2 .logosMobile {
@@ -196,11 +198,11 @@ footer .copyright {
       min-height: 100vh;
       display: flex;
       padding: 0; } }
-  #home img[src="images/logos/logoVerticeSinTexto.svg"] {
+  #home .logoGrandeVertice {
     display: none; }
     @media (min-width: 768px) {
-      #home img[src="images/logos/logoVerticeSinTexto.svg"] {
-        height: 100vh;
+      #home .logoGrandeVertice {
+        height: 85vh;
         display: block;
         position: absolute;
         transform: translateX(-50%) !important;
@@ -210,6 +212,14 @@ footer .copyright {
       background-color: white; } }
   #home #home2 .frase {
     height: 50vh; }
+    #home #home2 .frase .vertice {
+      font-family: "Orbitron", sans-serif;
+      color: white;
+      font-size: 3rem;
+      margin: 0; }
+    #home #home2 .frase .construcciones {
+      color: white;
+      font-size: 1.5rem; }
     @media (min-width: 768px) {
       #home #home2 .frase {
         width: 40vw;
@@ -218,9 +228,8 @@ footer .copyright {
         bottom: 10%;
         left: 10%; } }
   #home #home2 h1, #home #home2 h2 {
-    font: "Orbitron", sans-serif;
     color: white;
-    font: "Orbitron", sans-serif; }
+    font-size: 1.2rem; }
     @media (min-width: 768px) {
       #home #home2 h1, #home #home2 h2 {
         text-shadow: none;
@@ -254,7 +263,7 @@ footer .copyright {
 #contenido #nosotros .bannerConQuienesTrabajamos {
   background-color: rgba(77, 77, 77, 0.2); }
   #contenido #nosotros .bannerConQuienesTrabajamos img {
-    width: 120px;
+    width: 90px;
     object-fit: scale-down; }
 
 #contenido #steelFrame .bannerBeneficios {
