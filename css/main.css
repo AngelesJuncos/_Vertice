@@ -184,10 +184,10 @@ footer .copyright {
 
 #home {
   background-image: url(../images/index/portada.webp);
-  background-color: rgba(77, 77, 77, 0.8);
-  height: 100vh;
   background-size: cover;
-  background-blend-mode: darken; }
+  background-blend-mode: saturation;
+  background-color: rgba(77, 77, 77, 0.8);
+  height: 100vh; }
   @media (min-width: 768px) {
     #home {
       background-color: rgba(0, 0, 0, 0); } }

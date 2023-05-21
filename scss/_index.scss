@@ -6,6 +6,8 @@
 
 #home {
     background-image: url(../images/index/portada.webp);
+    background-size: cover;
+    background-blend-mode: saturation;
     background-color: map-get($colores,grisOscuro80);
     @media (min-width: 768px) {
 		background-color: map-get($colores,transparente);
@@ -14,8 +16,6 @@
         background-color: map-get($colores,grisOscuro80); 
     }
     height: 100vh;
-    background-size: cover;
-    background-blend-mode: darken;
     @media (min-width: 768px) {
 		min-height: 100vh;
         display: flex;
