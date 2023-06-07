@@ -37,29 +37,42 @@ nav{
                 color: map-get($colores, blanco);
                 background-color: map-get($colores, azul90);
                 @media (min-width: 768px) {
+                    //color: map-get($colores,grisOscuro);
+                    //background-color: map-get($colores, transparente);
+                    //border: map-get($colores, grisOscuro) 1.5px solid;
+                    //margin: 5px 0;
+                    //padding-left: 20px;
+                    //padding-right: 20px;
+                    &:hover{
+                        //color: map-get($colores,blanco);
+                        //border: map-get($colores, gris) 1.5px solid;
+                        //background-color: map-get($colores,gris);
+                    }
+                }
+                @media (min-width: 768px) {
+                    //Subrayado animado
                     color: map-get($colores,grisOscuro);
                     background-color: map-get($colores, transparente);
-                    border: map-get($colores, grisOscuro) 1.5px solid;
-                    margin: 5px 0;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    background-image: linear-gradient(currentColor, currentColor);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 1.8px;
+                    transition: background-size .5s;
+                    //hover
                     &:hover{
-                        color: map-get($colores,blanco);
-                        border: map-get($colores, gris) 1.5px solid;
-                        background-color: map-get($colores,gris);
-
+                        //Subrayado animado
+                        background-size: 100% 1.8px;
                     }
+                    padding: 0.2rem;
+                    margin: 1rem;
                 }
 
             }
         }
     }
-    
-    
     @media (min-width: 768px) {
         overflow-y: hidden;
-        background-color: map-get($colores, transparente);
-        
+        background-color: map-get($colores, transparente);    
     }  
     
     //logo Vertice
@@ -154,16 +167,12 @@ nav{
                         background-size: 100% 1.8px;
                     }
                     padding: 0!important;
-            }
+                }
             }   
         }
     }
-    
-    @media (min-width: 768px) {
-        display: block;
-        position: sticky;
-        top: 0;
-    }
+    position: sticky;
+    top: 0;
     .w-lg-100{
         text-align: right; //para alinear el botón hamburguesa a la derecha
         @media (min-width: 992px) {

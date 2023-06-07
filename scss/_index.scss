@@ -8,12 +8,12 @@
     background-image: url(../images/index/portada.webp);
     background-size: cover;
     background-blend-mode: saturation;
-    background-color: map-get($colores,grisOscuro80);
+    background-color: map-get($colores,grisOscuro70);
     @media (min-width: 768px) {
 		background-color: map-get($colores,transparente);
     }
     .filtro{
-        background-color: map-get($colores,grisOscuro80); 
+        background-color: map-get($colores,grisOscuro70); 
     }
     height: 100vh;
     @media (min-width: 768px) {
@@ -35,7 +35,8 @@
     
     #home2{
         @media (min-width: 768px) {
-		    background-color: map-get($colores, blanco); //color de fondo para el menú
+            //background-color: rgba($color: #ffffff, $alpha: 0.95);
+		    background-color: rgba($color: #FAFAFA, $alpha: 0.95) //color de fondo para el menú
 	    }
         .frase{
             height: 50vh; //para que funcione el justify-content-end que puse en el index en versión mobile
