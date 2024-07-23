@@ -352,3 +352,35 @@ footer .copyright {
   color: #0d718f;
   background-color: white;
   border: #4d4d4d 1px solid; }
+
+#videoKimi video {
+  max-width: 100vw;
+  max-height: 80vh;
+  object-fit: scale-down; }
+
+#kimi .bannerKimi h2, #kimi .bannerKimi h3, #kimi .bannerKimi sup {
+  color: #0d718f; }
+
+#kimi #descripcionMasFotosKimi .backgroundSticker {
+  background-color: #0d718f;
+  width: 240px;
+  max-width: 240px;
+  border-radius: 50%;
+  height: 240px; }
+  #kimi #descripcionMasFotosKimi .backgroundSticker svg {
+    width: 60px;
+    height: 60px;
+    fill: #151515; }
+  #kimi #descripcionMasFotosKimi .backgroundSticker h4 {
+    color: #151515;
+    font-weight: 700; }
+
+@media (min-width: 992px) {
+  #kimi #descripcionMasFotosKimi .w-md-25 {
+    width: 25%; }
+  #kimi #descripcionMasFotosKimi .w-md-75 {
+    width: 75%; } }
+
+#kimi #descripcionMasFotosKimi img {
+  max-height: 75vh;
+  object-fit: scale-down; }

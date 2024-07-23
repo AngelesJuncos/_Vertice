@@ -178,3 +178,50 @@
     }
     
 }
+
+//video Kimi
+#videoKimi{
+    video{
+        max-width: 100vw;
+	    max-height: 80vh;
+        object-fit: scale-down;
+    }
+}
+
+#kimi{
+    .bannerKimi{
+        h2, h3, sup {
+            color: map-get($colores, azul);
+        }
+    }
+    #descripcionMasFotosKimi{
+        .backgroundSticker{
+            background-color: map-get($colores, azul);
+            width: 240px;
+            max-width: 240px;
+            border-radius: 50%;
+            height: 240px;
+            svg{
+                width: 60px;
+                height: 60px;
+                fill: map-get($colores, negro);
+            }
+            h4{
+                color: map-get($colores, negro);
+                font-weight: $weight700;
+            }
+        }
+        @media (min-width: 992px) {
+            .w-md-25{
+                width: 25%;
+            }
+            .w-md-75{
+                width: 75%;
+            }
+        }
+        img {
+            max-height: 75vh;
+            object-fit: scale-down;
+        }
+    }
+}
