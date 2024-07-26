@@ -36,6 +36,12 @@ nav{
             a{
                 color: map-get($colores, blanco);
                 background-color: map-get($colores, azul90);
+                sup{
+                    color: map-get($colores, blanco);
+                    @media (min-width: 768px) {
+                        color: map-get($colores,grisOscuro);
+                    }
+                }
                 @media (min-width: 768px) {
                     //color: map-get($colores,grisOscuro);
                     //background-color: map-get($colores, transparente);

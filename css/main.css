@@ -53,6 +53,11 @@ nav .navbar .navbar-toggler-icon {
   #navbarVertice ul li a {
     color: white;
     background-color: rgba(13, 113, 143, 0.9); }
+    #navbarVertice ul li a sup {
+      color: white; }
+      @media (min-width: 768px) {
+        #navbarVertice ul li a sup {
+          color: #4d4d4d; } }
     @media (min-width: 768px) {
       #navbarVertice ul li a {
         color: #4d4d4d;
