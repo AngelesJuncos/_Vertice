@@ -1,3 +1,8 @@
+//logo Vertice
+img[src$="images/logos/logoVerticeConTexto.svg"]{
+	height: 120px;
+}
+
 //botón hamburguesa ->colores
 nav{
     //button{
@@ -155,7 +160,7 @@ nav{
     margin: 0;
     padding: 0 1rem;
     z-index: 1000;
-    background-color: map-get($colores, azul20);
+    background-color: map-get($colores, blanco);
     ul{
         li{
             a{

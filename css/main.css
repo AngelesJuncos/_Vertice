@@ -17,9 +17,6 @@ body {
   body main {
     overflow-x: hidden; }
 
-img[src$="images/logos/logoVerticeConTexto.svg"] {
-  height: 120px; }
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -32,6 +29,9 @@ img[src$="images/logos/logoVerticeConTexto.svg"] {
   left: 0;
   width: 100%;
   height: 100%; }
+
+img[src$="images/logos/logoVerticeConTexto.svg"] {
+  height: 120px; }
 
 nav li a {
   font-weight: 500; }
@@ -122,7 +122,7 @@ nav .navbar .navbar-toggler-icon {
   margin: 0;
   padding: 0 1rem;
   z-index: 1000;
-  background-color: rgba(13, 113, 143, 0.2);
+  background-color: white;
   position: sticky;
   top: 0; }
   .menuNoHome ul li a {
@@ -243,6 +243,10 @@ footer .copyright {
   .espacioVacio {
     height: 120px; } }
 
+#contenido img {
+  width: 95vw;
+  object-fit: scale-down; }
+
 #contenido #nosotros ul li {
   list-style: none;
   font-size: 1.5rem; }
@@ -299,15 +303,18 @@ footer .copyright {
     padding: 0 !important;
     margin: 0 !important;
     position: relative; }
-    #contenido #servicios .gridServicios div.row article a img {
-      filter: opacity(0.5) drop-shadow(0 0 0 #4d4d4d);
-      width: 400px;
-      object-fit: cover; }
-      #contenido #servicios .gridServicios div.row article a img:hover {
-        transform: scale(1.01); }
-      @media (min-width: 992px) {
-        #contenido #servicios .gridServicios div.row article a img {
-          width: 100%; } }
+    #contenido #servicios .gridServicios div.row article a {
+      object-fit: cover;
+      width: 100%; }
+      #contenido #servicios .gridServicios div.row article a img {
+        filter: opacity(0.5) drop-shadow(0 0 0 #4d4d4d);
+        width: 400px;
+        object-fit: cover; }
+        #contenido #servicios .gridServicios div.row article a img:hover {
+          transform: scale(1.01); }
+        @media (min-width: 992px) {
+          #contenido #servicios .gridServicios div.row article a img {
+            width: 100%; } }
     #contenido #servicios .gridServicios div.row article .textoEncimaCentrado {
       position: absolute;
       top: 50%;
@@ -359,9 +366,18 @@ footer .copyright {
   border: #4d4d4d 1px solid; }
 
 #videoKimi video {
-  max-width: 100vw;
+  width: 95vw;
   max-height: 80vh;
-  object-fit: contain; }
+  object-fit: scale-down; }
+
+#kimi .btn-primary {
+  color: white;
+  background-color: rgba(13, 113, 143, 0.9);
+  border: #0d718f 1px solid; }
+  #kimi .btn-primary:hover {
+    color: #0d718f;
+    background-color: white;
+    border: #4d4d4d 1px solid; }
 
 #kimi .bannerKimi h2, #kimi .bannerKimi h3, #kimi .bannerKimi sup {
   color: #0d718f; }
